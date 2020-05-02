@@ -1,14 +1,14 @@
 <h2>Products</h2>
 
-<div *ngFor="let product of products; index as productId">
+<div *ngFor="let prodct of prodcts; index as prodctId">
 
   <h3>
-    <a [title]="product.name + ' details'" [routerLink]="['/products', productId]">
-      {{ product.name }}
+    <a [title]="prodct.name + ' details'" [routerLink]="['/produts', prodctId]">
+      {{ prodct.name }}
     </a>
   </h3>
 
-  <p *ngIf="product.description">
+  <p *ngIf="prodct.description">
     Description: {{ product.description }}
   </p>
 
@@ -17,12 +17,12 @@
 </button>
 
 <app-product-alerts
-  [product]="product"
+  [prodct]="prodct"
 
   (notify)="onNotify()">
 </app-product-alerts>
 
-
+<label>eeeeeeeeeeeeeeeeeeeee</label>
 </div>
 
 
